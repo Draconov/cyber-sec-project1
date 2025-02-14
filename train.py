@@ -125,12 +125,6 @@ def train_udp(df, classifier=0):
         else:
             udp_df = udp_df.replace(classes[i], 1)
     
-    #turning the service attribute to categorical values
-    #icmp_df=icmp_df.replace("eco_i",-0.1)
-    #icmp_df=icmp_df.replace("ecr_i",0.0)
-    #icmp_df=icmp_df.replace("tim_i",0.1)
-    #icmp_df=icmp_df.replace("urp_i",0.2)
-    
     y = udp_df.loc[:,udp_target] #updating the y variables
     print("Data preprocessing done.")
     
